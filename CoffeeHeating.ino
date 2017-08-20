@@ -17,7 +17,7 @@ DallasTemperature sensors(&oneWire);
 void setup(void)
 {
   // start serial port
-  Serial.begin(9600);
+  Serial.begin(19200);
   Serial.println("Dallas Temperature IC Control Library Demo");
 
   // Start up the library
@@ -36,7 +36,7 @@ void loop(void)
 { 
   // call sensors.requestTemperatures() to issue a global temperature 
   // request to all devices on the bus
-  delay(3000);
+  delay(500);
   
   numberOfDevices = sensors.getDeviceCount();
 
